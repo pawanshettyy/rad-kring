@@ -25,9 +25,16 @@ export default function Footer() {
                         </Link>
                         <p className="text-gray-400 text-sm">Made in India, Built for the World.</p>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-electric-orange transition-colors"><Linkedin /></a>
-                            <a href="#" className="text-gray-400 hover:text-electric-orange transition-colors"><Instagram /></a>
-                            <a href="#" className="text-gray-400 hover:text-electric-orange transition-colors"><Youtube /></a>
+                            <a 
+                                href="https://www.linkedin.com/company/rad-kring" 
+                                className="text-gray-400 hover:text-electric-orange transition-colors" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                <Linkedin />
+                            </a>
+                            {/* <a href="#" className="text-gray-400 hover:text-electric-orange transition-colors"><Instagram /></a>
+                            <a href="#" className="text-gray-400 hover:text-electric-orange transition-colors"><Youtube /></a> */}
                         </div>
                     </div>
 
