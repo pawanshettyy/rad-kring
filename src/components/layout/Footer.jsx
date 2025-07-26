@@ -56,7 +56,7 @@ export default function Footer() {
                             <li><Link to="/team" className="text-gray-400 hover:text-electric-orange transition-colors">About Us</Link></li>
                             <li><Link to="/news" className="text-gray-400 hover:text-electric-orange transition-colors">News & Media</Link></li>
                             <li><Link to="/contact" className="text-gray-400 hover:text-electric-orange transition-colors">Contact</Link></li>
-                            <li><p className="text-gray-400 hover:text-electric-orange transition-colors cursor-pointer">Privacy Policy</p></li>
+                            <li><Link to="/privacy-policy" className="text-gray-400 hover:text-electric-orange transition-colors cursor-pointer">Privacy Policy</Link></li>
                         </ul>
                     </div>
 

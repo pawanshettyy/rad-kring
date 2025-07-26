@@ -14,6 +14,7 @@ import NewsPage from '@/pages/NewsPage';
 import ContactPage from '@/pages/ContactPage';
 import BookingPage from '@/pages/BookingPage';
 import NotFoundPage from '@/pages/NotFoundPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Route path="/mr-experience" element={<MRExperiencePage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
             <Route path="/booking" element={<BookingPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
