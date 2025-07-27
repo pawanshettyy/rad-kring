@@ -1,7 +1,7 @@
 const User = require('../models/User');
 const { generateToken } = require('../utils/tokenUtils');
 const { createError } = require('../utils/errorUtils');
-const { asyncHandler } = require('../utils/asyncHandler');
+const asyncHandler = require('../utils/asyncHandler');
 
 // @desc    Register a new user
 // @route   POST /api/auth/register
