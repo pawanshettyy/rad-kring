@@ -1,4 +1,5 @@
 const Newsletter = require('../models/Newsletter');
+const { sendWelcomeEmail } = require('../utils/emailService');
 
 // @desc    Subscribe to newsletter
 // @route   POST /api/newsletter/subscribe
@@ -36,6 +37,11 @@ const subscribeNewsletter = async (req, res) => {
         
         await existingSubscription.save();
 
+        // Send welcome email for reactivation
+        sendWelcomeEmail(existingSubscription.email, existingSubscription.firstName).catch(err => 
+          console.error('Welcome email failed:', err)
+        );
+
         return res.json({
           success: true,
           message: 'Newsletter subscription reactivated successfully!',
@@ -55,6 +61,11 @@ const subscribeNewsletter = async (req, res) => {
       interests: interests || [],
       subscriptionSource: source || 'footer'
     });
+
+    // Send welcome email (don't block response if email fails)
+    sendWelcomeEmail(subscription.email, subscription.firstName).catch(err => 
+      console.error('Welcome email failed:', err)
+    );
 
     res.status(201).json({
       success: true,
