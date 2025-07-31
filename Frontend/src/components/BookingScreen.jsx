@@ -68,7 +68,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
+    <div className="min-h-screen">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
