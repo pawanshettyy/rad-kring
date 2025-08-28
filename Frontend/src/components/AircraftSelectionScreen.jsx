@@ -71,14 +71,16 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
         className="mx-6 mb-6"
       >
         <div className="glass-panel rounded-2xl p-6 text-center">
-          <div className="mb-4">
-            <img 
-              className="w-full h-32 object-contain mx-auto" 
-              alt="Sankalpa v1 eVTOL aircraft"
-             src="https://images.unsplash.com/photo-1596610848314-cb56f9f0a986" />
+          <div className="mb-6">
+    
           </div>
           <h2 className="font-michroma font-bold text-xl text-white mb-2">Sankalpa v1</h2>
-          <p className="text-gray-400 font-sans mb-4">Electric Vertical Takeoff & Landing Aircraft</p>
+          <p className="text-gray-400 font-sans mb-2">Electric Vertical Takeoff & Landing Aircraft</p>
+          <div className="flex justify-center space-x-4 mb-4">
+            <span className="px-3 py-1 bg-green-500/20 text-green-400 text-xs font-sans rounded-full">Zero Emissions</span>
+            <span className="px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-sans rounded-full">Quiet Flight</span>
+            <span className="px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-sans rounded-full">Advanced Safety</span>
+          </div>
           
           <div className="grid grid-cols-3 gap-4">
             <div className="text-center">
@@ -89,12 +91,25 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
             <div className="text-center">
               <Users className="w-6 h-6 text-blue-500 mx-auto mb-1" />
               <p className="text-white font-sans font-semibold">6 Seats</p>
-              <p className="text-gray-400 text-xs">Capacity</p>
+              <p className="text-gray-400 text-xs">Passenger Capacity</p>
             </div>
             <div className="text-center">
               <Zap className="w-6 h-6 text-green-500 mx-auto mb-1" />
-              <p className="text-white font-sans font-semibold">100%</p>
-              <p className="text-gray-400 text-xs">Electric</p>
+              <p className="text-white font-sans font-semibold">250 km</p>
+              <p className="text-gray-400 text-xs">Max Range</p>
+            </div>
+          </div>
+          
+          <div className="mt-4 pt-4 border-t border-gray-600">
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="text-center">
+                <p className="text-gray-400 font-sans">Cruise Speed</p>
+                <p className="text-white font-michroma font-semibold">150 km/h</p>
+              </div>
+              <div className="text-center">
+                <p className="text-gray-400 font-sans">Battery Life</p>
+                <p className="text-white font-michroma font-semibold">90 min</p>
+              </div>
             </div>
           </div>
         </div>
