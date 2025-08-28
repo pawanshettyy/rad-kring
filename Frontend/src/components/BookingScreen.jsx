@@ -84,7 +84,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
           >
             <ArrowLeft className="w-5 h-5" />
           </Button>
-          <h1 className="font-montserrat font-bold text-2xl text-white">Book Flight</h1>
+          <h1 className="font-michroma font-bold text-2xl text-white">Book Flight</h1>
         </div>
       </motion.div>
 
@@ -100,7 +100,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
           <div className="relative z-10 h-full flex items-center justify-center">
             <div className="text-center">
               <Navigation className="w-12 h-12 text-orange-500 mx-auto mb-2" />
-              <p className="text-white font-roboto">Interactive Route Map</p>
+              <p className="text-white font-sans">Interactive Route Map</p>
               <p className="text-gray-400 text-sm">Select locations below to view route</p>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
               animate={{ opacity: 1 }}
               className="absolute top-4 right-4 glass-panel rounded-lg p-2"
             >
-              <p className="text-orange-500 font-montserrat font-semibold">{distance} km</p>
+              <p className="text-orange-500 font-michroma font-semibold">{distance} km</p>
               <p className="text-white text-sm">₹{calculateFare(distance).toLocaleString()}</p>
             </motion.div>
           )}
@@ -127,7 +127,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
       >
         {/* Pickup Location */}
         <div>
-          <label className="block text-white font-roboto font-medium mb-2">
+          <label className="block text-white font-sans font-medium mb-2">
             <MapPin className="w-4 h-4 inline mr-2 text-green-500" />
             Pickup Point
           </label>
@@ -135,7 +135,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
             <select
               value={pickup}
               onChange={(e) => handleLocationSelect(e.target.value, 'pickup')}
-              className="w-full bg-transparent text-white font-roboto focus:outline-none"
+              className="w-full bg-transparent text-white font-sans focus:outline-none"
             >
               <option value="" className="bg-gray-800">Select pickup location</option>
               {locations.map((location) => (
@@ -149,7 +149,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
 
         {/* Drop-off Location */}
         <div>
-          <label className="block text-white font-roboto font-medium mb-2">
+          <label className="block text-white font-sans font-medium mb-2">
             <MapPin className="w-4 h-4 inline mr-2 text-red-500" />
             Drop-off Point
           </label>
@@ -157,7 +157,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
             <select
               value={dropoff}
               onChange={(e) => handleLocationSelect(e.target.value, 'dropoff')}
-              className="w-full bg-transparent text-white font-roboto focus:outline-none"
+              className="w-full bg-transparent text-white font-sans focus:outline-none"
             >
               <option value="" className="bg-gray-800">Select drop-off location</option>
               {locations.filter(loc => loc !== pickup).map((location) => (
@@ -180,7 +180,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <RotateCcw className="w-5 h-5 text-orange-500" />
-              <span className="text-white font-roboto">Return Flight</span>
+              <span className="text-white font-sans">Return Flight</span>
             </div>
             <div className={`w-6 h-6 rounded-full border-2 ${
               returnFlight ? 'bg-orange-500 border-orange-500' : 'border-gray-400'
@@ -201,12 +201,12 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
           <div className="glass-panel rounded-xl p-4">
             <div className="flex justify-between items-center">
               <div>
-                <p className="text-gray-400 text-sm font-roboto">Estimated Distance</p>
-                <p className="text-white font-montserrat font-semibold text-lg">{distance} km</p>
+                <p className="text-gray-400 text-sm font-sans">Estimated Distance</p>
+                <p className="text-white font-michroma font-semibold text-lg">{distance} km</p>
               </div>
               <div className="text-right">
-                <p className="text-gray-400 text-sm font-roboto">Estimated Fare</p>
-                <p className="text-orange-500 font-montserrat font-bold text-xl">
+                <p className="text-gray-400 text-sm font-sans">Estimated Fare</p>
+                <p className="text-orange-500 font-michroma font-bold text-xl">
                   ₹{calculateFare(distance).toLocaleString()}
                 </p>
               </div>
@@ -225,7 +225,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
         <Button
           onClick={handleContinue}
           disabled={!pickup || !dropoff || distance < 20}
-          className="w-full gradient-orange text-white font-montserrat font-semibold text-lg py-6 rounded-2xl glow-orange hover:scale-105 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full gradient-orange text-white font-michroma font-semibold text-lg py-6 rounded-2xl glow-orange hover:scale-105 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Continue to Pricing
         </Button>

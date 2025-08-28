@@ -44,10 +44,10 @@ export default function Navbar() {
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-             <Button asChild variant="outline" className="font-montserrat font-bold text-neon-blue border-neon-blue hover:bg-neon-blue/10 hover:text-neon-blue glow-blue">
+             <Button asChild variant="outline" className="font-michroma font-bold text-neon-blue border-neon-blue hover:bg-neon-blue/10 hover:text-neon-blue glow-blue">
                 <Link to="/pre-order">Pre-Order Now</Link>
             </Button>
-            <Button asChild className="font-montserrat font-bold gradient-orange glow-orange text-white">
+            <Button asChild className="font-michroma font-bold gradient-orange glow-orange text-white">
                 <Link to="/booking">Book Your Flight</Link>
             </Button>
           </div>
@@ -88,10 +88,10 @@ export default function Navbar() {
               </NavLink>
             ))}
             <div className="pt-4 px-3 flex flex-col space-y-3">
-                <Button asChild variant="outline" className="w-full font-montserrat font-bold text-neon-blue border-neon-blue hover:bg-neon-blue/10 hover:text-neon-blue glow-blue">
+                <Button asChild variant="outline" className="w-full font-michroma font-bold text-neon-blue border-neon-blue hover:bg-neon-blue/10 hover:text-neon-blue glow-blue">
                     <Link to="/mr-experience" onClick={() => setIsOpen(false)}>Experience in MR</Link>
                 </Button>
-                <Button asChild className="w-full font-montserrat font-bold gradient-orange glow-orange text-white">
+                <Button asChild className="w-full font-michroma font-bold gradient-orange glow-orange text-white">
                     <Link to="/booking" onClick={() => setIsOpen(false)}>Book Your Flight</Link>
                 </Button>
             </div>

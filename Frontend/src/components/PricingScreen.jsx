@@ -65,7 +65,7 @@ export default function PricingScreen({ onNavigate, bookingData, goBack }) {
           >
             <ArrowLeft className="w-5 h-5" />
           </Button>
-          <h1 className="font-montserrat font-bold text-2xl text-white">Choose Plan</h1>
+          <h1 className="font-michroma font-bold text-2xl text-white">Choose Plan</h1>
         </div>
       </motion.div>
 
@@ -80,8 +80,8 @@ export default function PricingScreen({ onNavigate, bookingData, goBack }) {
           <div className="flex items-center space-x-3">
             <Leaf className="w-8 h-8 text-green-400" />
             <div>
-              <p className="text-white font-montserrat font-semibold">Environmental Impact</p>
-              <p className="text-green-400 font-roboto">{co2Saved} kg CO₂ saved vs traditional transport</p>
+              <p className="text-white font-michroma font-semibold">Environmental Impact</p>
+              <p className="text-green-400 font-sans">{co2Saved} kg CO₂ saved vs traditional transport</p>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function PricingScreen({ onNavigate, bookingData, goBack }) {
             }`}
           >
             {plan.popular && (
-              <div className="absolute -top-2 left-6 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-montserrat font-semibold">
+              <div className="absolute -top-2 left-6 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-michroma font-semibold">
                 Most Popular
               </div>
             )}
@@ -118,15 +118,15 @@ export default function PricingScreen({ onNavigate, bookingData, goBack }) {
                   <plan.icon className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-montserrat font-bold text-lg text-white">{plan.name}</h3>
-                  <p className="text-gray-400 font-roboto text-sm">{plan.description}</p>
+                  <h3 className="font-michroma font-bold text-lg text-white">{plan.name}</h3>
+                  <p className="text-gray-400 font-sans text-sm">{plan.description}</p>
                 </div>
               </div>
               <div className="text-right">
-                <p className="font-montserrat font-bold text-2xl text-white">
+                <p className="font-michroma font-bold text-2xl text-white">
                   ₹{plan.price.toLocaleString()}
                 </p>
-                <p className="text-gray-400 text-sm font-roboto">
+                <p className="text-gray-400 text-sm font-sans">
                   {plan.id === 'single' ? 'one-time' : 'per month'}
                 </p>
               </div>
@@ -136,7 +136,7 @@ export default function PricingScreen({ onNavigate, bookingData, goBack }) {
               {plan.features.map((feature, idx) => (
                 <div key={idx} className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-orange-500 rounded-full" />
-                  <p className="text-gray-300 font-roboto text-sm">{feature}</p>
+                  <p className="text-gray-300 font-sans text-sm">{feature}</p>
                 </div>
               ))}
             </div>
@@ -163,7 +163,7 @@ export default function PricingScreen({ onNavigate, bookingData, goBack }) {
       >
         <Button
           onClick={() => onNavigate('aircraft')}
-          className="w-full gradient-orange text-white font-montserrat font-semibold text-lg py-6 rounded-2xl glow-orange hover:scale-105 transition-all"
+          className="w-full gradient-orange text-white font-michroma font-semibold text-lg py-6 rounded-2xl glow-orange hover:scale-105 transition-all"
         >
           Select Aircraft & Time
         </Button>

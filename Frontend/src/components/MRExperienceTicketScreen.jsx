@@ -8,7 +8,7 @@ export default function MRExperienceTicketScreen({ bookingData, onBack }) {
   const { region, subRegion, center, centerPrice, date, time } = bookingData;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
+    <div className="min-h-screen">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -24,7 +24,7 @@ export default function MRExperienceTicketScreen({ bookingData, onBack }) {
           >
             <ArrowLeft className="w-5 h-5" />
           </Button>
-          <h1 className="font-montserrat font-bold text-2xl text-white">MR Experience Ticket</h1>
+          <h1 className="font-michroma font-bold text-2xl text-white">MR Experience Ticket</h1>
         </div>
       </motion.div>
 
@@ -45,8 +45,8 @@ export default function MRExperienceTicketScreen({ bookingData, onBack }) {
             ✓
           </motion.div>
         </div>
-        <h2 className="font-montserrat font-bold text-xl text-white">Booking Confirmed!</h2>
-        <p className="text-gray-400 font-roboto">Your MR session is ready</p>
+        <h2 className="font-michroma font-bold text-xl text-white">Booking Confirmed!</h2>
+        <p className="text-gray-400 font-sans">Your MR session is ready</p>
       </motion.div>
 
       {/* Ticket Details */}
@@ -61,22 +61,22 @@ export default function MRExperienceTicketScreen({ bookingData, onBack }) {
           <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-6 text-white">
             <div className="flex justify-between items-start mb-4">
               <div>
-                <h3 className="font-montserrat font-bold text-lg">RAD KRING AVIATION</h3>
-                <p className="font-roboto text-sm opacity-90">Mixed Reality Experience</p>
+                <h3 className="font-michroma font-bold text-lg">RAD KRING AVIATION</h3>
+                <p className="font-sans text-sm opacity-90">Mixed Reality Experience</p>
               </div>
               <div className="text-right">
-                <p className="font-roboto text-sm opacity-90">Booking Ref</p>
-                <p className="font-montserrat font-bold text-lg">{bookingRef}</p>
+                <p className="font-sans text-sm opacity-90">Booking Ref</p>
+                <p className="font-michroma font-bold text-lg">{bookingRef}</p>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <p className="font-roboto text-sm opacity-90">City</p>
-                <p className="font-montserrat font-semibold">{region}</p>
+                <p className="font-sans text-sm opacity-90">City</p>
+                <p className="font-michroma font-semibold">{region}</p>
               </div>
               <div>
-                <p className="font-roboto text-sm opacity-90">Sub-Region</p>
-                <p className="font-montserrat font-semibold">{subRegion}</p>
+                <p className="font-sans text-sm opacity-90">Sub-Region</p>
+                <p className="font-michroma font-semibold">{subRegion}</p>
               </div>
             </div>
           </div>
@@ -86,18 +86,18 @@ export default function MRExperienceTicketScreen({ bookingData, onBack }) {
             <div className="grid grid-cols-3 gap-4 mb-6">
               <div className="text-center">
                 <Clock className="w-6 h-6 text-orange-500 mx-auto mb-2" />
-                <p className="text-gray-400 text-sm font-roboto">Time</p>
-                <p className="text-white font-montserrat font-semibold">{time}</p>
+                <p className="text-gray-400 text-sm font-sans">Time</p>
+                <p className="text-white font-michroma font-semibold">{time}</p>
               </div>
               <div className="text-center">
                 <MapPin className="w-6 h-6 text-blue-500 mx-auto mb-2" />
-                <p className="text-gray-400 text-sm font-roboto">Center</p>
-                <p className="text-white font-montserrat font-semibold">{center}</p>
+                <p className="text-gray-400 text-sm font-sans">Center</p>
+                <p className="text-white font-michroma font-semibold">{center}</p>
               </div>
               <div className="text-center">
                 <Calendar className="w-6 h-6 text-green-500 mx-auto mb-2" />
-                <p className="text-gray-400 text-sm font-roboto">Date</p>
-                <p className="text-white font-montserrat font-semibold">{date}</p>
+                <p className="text-gray-400 text-sm font-sans">Date</p>
+                <p className="text-white font-michroma font-semibold">{date}</p>
               </div>
             </div>
 
@@ -106,13 +106,13 @@ export default function MRExperienceTicketScreen({ bookingData, onBack }) {
               <div className="w-32 h-32 bg-white rounded-xl mx-auto flex items-center justify-center mb-4">
                 <QrCode className="w-24 h-24 text-black" />
               </div>
-              <p className="text-gray-400 text-sm font-roboto">Scan at center for entry</p>
+              <p className="text-gray-400 text-sm font-sans">Scan at center for entry</p>
             </div>
 
             {/* Price */}
             <div className="glass-panel rounded-xl p-4 mb-4 text-center">
-              <p className="text-gray-400 text-sm font-roboto mb-1">Price</p>
-              <p className="text-orange-500 font-montserrat font-bold text-2xl">₹{centerPrice}</p>
+              <p className="text-gray-400 text-sm font-sans mb-1">Price</p>
+              <p className="text-orange-500 font-michroma font-bold text-2xl">₹{centerPrice}</p>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function MRExperienceTicketScreen({ bookingData, onBack }) {
       >
         <Button
           onClick={onBack}
-          className="w-full gradient-orange text-white font-montserrat font-semibold py-4 rounded-xl glow-orange hover:scale-105 transition-all"
+          className="w-full gradient-orange text-white font-michroma font-semibold py-4 rounded-xl glow-orange hover:scale-105 transition-all"
         >
           <Calendar className="w-5 h-5 mr-2" />
           Book Another MR Session

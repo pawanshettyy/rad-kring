@@ -59,7 +59,7 @@ export default function PaymentScreen({ onNavigate, bookingData, goBack }) {
           >
             <ArrowLeft className="w-5 h-5" />
           </Button>
-          <h1 className="font-montserrat font-bold text-2xl text-white">Payment</h1>
+          <h1 className="font-michroma font-bold text-2xl text-white">Payment</h1>
         </div>
       </motion.div>
 
@@ -71,27 +71,27 @@ export default function PaymentScreen({ onNavigate, bookingData, goBack }) {
         className="mx-6 mb-6"
       >
         <div className="glass-panel rounded-2xl p-6">
-          <h3 className="font-montserrat font-semibold text-lg text-white mb-4">Fare Breakdown</h3>
+          <h3 className="font-michroma font-semibold text-lg text-white mb-4">Fare Breakdown</h3>
           
           <div className="space-y-3">
             <div className="flex justify-between">
-              <span className="text-gray-400 font-roboto">Base Fare</span>
-              <span className="text-white font-roboto">₹{baseFare.toLocaleString()}</span>
+              <span className="text-gray-400 font-sans">Base Fare</span>
+              <span className="text-white font-sans">₹{baseFare.toLocaleString()}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-400 font-roboto">Taxes & Fees</span>
-              <span className="text-white font-roboto">₹{taxes.toLocaleString()}</span>
+              <span className="text-gray-400 font-sans">Taxes & Fees</span>
+              <span className="text-white font-sans">₹{taxes.toLocaleString()}</span>
             </div>
             {promoApplied && (
               <div className="flex justify-between">
-                <span className="text-green-400 font-roboto">Discount (FIRST10)</span>
-                <span className="text-green-400 font-roboto">-₹{discount.toLocaleString()}</span>
+                <span className="text-green-400 font-sans">Discount (FIRST10)</span>
+                <span className="text-green-400 font-sans">-₹{discount.toLocaleString()}</span>
               </div>
             )}
             <div className="border-t border-gray-600 pt-3">
               <div className="flex justify-between">
-                <span className="text-white font-montserrat font-semibold text-lg">Total</span>
-                <span className="text-orange-500 font-montserrat font-bold text-xl">₹{totalFare.toLocaleString()}</span>
+                <span className="text-white font-michroma font-semibold text-lg">Total</span>
+                <span className="text-orange-500 font-michroma font-bold text-xl">₹{totalFare.toLocaleString()}</span>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function PaymentScreen({ onNavigate, bookingData, goBack }) {
         <div className="glass-panel rounded-2xl p-6">
           <div className="flex items-center space-x-2 mb-4">
             <Tag className="w-5 h-5 text-orange-500" />
-            <h3 className="font-montserrat font-semibold text-lg text-white">Promo Code</h3>
+            <h3 className="font-michroma font-semibold text-lg text-white">Promo Code</h3>
           </div>
           
           <div className="flex space-x-3">
@@ -118,19 +118,19 @@ export default function PaymentScreen({ onNavigate, bookingData, goBack }) {
               onChange={(e) => setPromoCode(e.target.value)}
               placeholder="Enter promo code"
               disabled={promoApplied}
-              className="flex-1 bg-transparent border border-gray-600 rounded-xl px-4 py-3 text-white font-roboto focus:outline-none focus:border-orange-500 disabled:opacity-50"
+              className="flex-1 bg-transparent border border-gray-600 rounded-xl px-4 py-3 text-white font-sans focus:outline-none focus:border-orange-500 disabled:opacity-50"
             />
             <Button
               onClick={applyPromo}
               disabled={promoApplied || !promoCode}
-              className="gradient-orange text-white font-roboto font-medium px-6 rounded-xl disabled:opacity-50"
+              className="gradient-orange text-white font-sans font-medium px-6 rounded-xl disabled:opacity-50"
             >
               Apply
             </Button>
           </div>
           
           {!promoApplied && (
-            <p className="text-gray-400 text-sm font-roboto mt-2">Try: FIRST10 for 10% off</p>
+            <p className="text-gray-400 text-sm font-sans mt-2">Try: FIRST10 for 10% off</p>
           )}
         </div>
       </motion.div>
@@ -142,7 +142,7 @@ export default function PaymentScreen({ onNavigate, bookingData, goBack }) {
         transition={{ delay: 0.3 }}
         className="px-6 mb-6"
       >
-        <h3 className="font-montserrat font-semibold text-lg text-white mb-4">Payment Method</h3>
+        <h3 className="font-michroma font-semibold text-lg text-white mb-4">Payment Method</h3>
         
         <div className="space-y-3">
           {paymentMethods.map((method) => (
@@ -160,8 +160,8 @@ export default function PaymentScreen({ onNavigate, bookingData, goBack }) {
                 <div className="flex items-center space-x-3">
                   <method.icon className="w-6 h-6 text-orange-500" />
                   <div>
-                    <p className="text-white font-roboto font-medium">{method.name}</p>
-                    <p className="text-gray-400 text-sm font-roboto">{method.description}</p>
+                    <p className="text-white font-sans font-medium">{method.name}</p>
+                    <p className="text-gray-400 text-sm font-sans">{method.description}</p>
                   </div>
                 </div>
                 <div className={`w-6 h-6 rounded-full border-2 ${
@@ -188,7 +188,7 @@ export default function PaymentScreen({ onNavigate, bookingData, goBack }) {
       >
         <Button
           onClick={handlePayment}
-          className="w-full gradient-orange text-white font-montserrat font-semibold text-lg py-6 rounded-2xl glow-orange hover:scale-105 transition-all animate-pulse-glow"
+          className="w-full gradient-orange text-white font-michroma font-semibold text-lg py-6 rounded-2xl glow-orange hover:scale-105 transition-all animate-pulse-glow"
         >
           Pay ₹{totalFare.toLocaleString()} Now
         </Button>

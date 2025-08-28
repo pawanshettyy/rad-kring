@@ -59,7 +59,7 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
           >
             <ArrowLeft className="w-5 h-5" />
           </Button>
-          <h1 className="font-montserrat font-bold text-2xl text-white">Aircraft & Time</h1>
+          <h1 className="font-michroma font-bold text-2xl text-white">Aircraft & Time</h1>
         </div>
       </motion.div>
 
@@ -77,23 +77,23 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
               alt="Sankalpa v1 eVTOL aircraft"
              src="https://images.unsplash.com/photo-1596610848314-cb56f9f0a986" />
           </div>
-          <h2 className="font-montserrat font-bold text-xl text-white mb-2">Sankalpa v1</h2>
-          <p className="text-gray-400 font-roboto mb-4">Electric Vertical Takeoff & Landing Aircraft</p>
+          <h2 className="font-michroma font-bold text-xl text-white mb-2">Sankalpa v1</h2>
+          <p className="text-gray-400 font-sans mb-4">Electric Vertical Takeoff & Landing Aircraft</p>
           
           <div className="grid grid-cols-3 gap-4">
             <div className="text-center">
               <Clock className="w-6 h-6 text-orange-500 mx-auto mb-1" />
-              <p className="text-white font-roboto font-semibold">{flightDuration} min</p>
+              <p className="text-white font-sans font-semibold">{flightDuration} min</p>
               <p className="text-gray-400 text-xs">Flight Time</p>
             </div>
             <div className="text-center">
               <Users className="w-6 h-6 text-blue-500 mx-auto mb-1" />
-              <p className="text-white font-roboto font-semibold">6 Seats</p>
+              <p className="text-white font-sans font-semibold">6 Seats</p>
               <p className="text-gray-400 text-xs">Capacity</p>
             </div>
             <div className="text-center">
               <Zap className="w-6 h-6 text-green-500 mx-auto mb-1" />
-              <p className="text-white font-roboto font-semibold">100%</p>
+              <p className="text-white font-sans font-semibold">100%</p>
               <p className="text-gray-400 text-xs">Electric</p>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
         transition={{ delay: 0.2 }}
         className="px-6 mb-6"
       >
-        <h3 className="font-montserrat font-semibold text-lg text-white mb-4">Select Departure Time</h3>
+        <h3 className="font-michroma font-semibold text-lg text-white mb-4">Select Departure Time</h3>
         <div className="grid grid-cols-2 gap-3">
           {timeSlots.map((time) => (
             <motion.button
@@ -120,7 +120,7 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
                   : 'text-white hover:bg-white/10'
               }`}
             >
-              <p className="font-roboto font-medium">{time}</p>
+              <p className="font-sans font-medium">{time}</p>
             </motion.button>
           ))}
         </div>
@@ -135,7 +135,7 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
       >
         <div className="flex items-center space-x-2 mb-4">
           <Plus className="w-5 h-5 text-orange-500" />
-          <h3 className="font-montserrat font-semibold text-lg text-white">Additional Services</h3>
+          <h3 className="font-michroma font-semibold text-lg text-white">Additional Services</h3>
         </div>
         
         <div className="space-y-3">
@@ -154,8 +154,8 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
                 <div className="flex items-center space-x-3">
                   <span className="text-2xl">{service.icon}</span>
                   <div>
-                    <p className="text-white font-roboto font-medium">{service.name}</p>
-                    <p className="text-orange-500 font-montserrat font-semibold">+₹{service.price}</p>
+                    <p className="text-white font-sans font-medium">{service.name}</p>
+                    <p className="text-orange-500 font-michroma font-semibold">+₹{service.price}</p>
                   </div>
                 </div>
                 <div className={`w-6 h-6 rounded-full border-2 ${
@@ -183,7 +183,7 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
         <Button
           onClick={handleContinue}
           disabled={!selectedTime}
-          className="w-full gradient-orange text-white font-montserrat font-semibold text-lg py-6 rounded-2xl glow-orange hover:scale-105 transition-all disabled:opacity-50"
+          className="w-full gradient-orange text-white font-michroma font-semibold text-lg py-6 rounded-2xl glow-orange hover:scale-105 transition-all disabled:opacity-50"
         >
           Continue to Payment
         </Button>

@@ -45,14 +45,14 @@ export default function SplashScreen({ onComplete }) {
         transition={{ delay: 0.5, duration: 0.8 }}
         className="text-center mt-8 px-6"
       >
-        <h1 className="font-montserrat font-bold text-3xl text-white mb-2 text-glow">
+        <h1 className="font-michroma font-bold text-3xl text-white mb-2 text-glow">
           RAD KRING AVIATION
         </h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="font-roboto text-lg text-gray-300 mb-6"
+          className="font-sans text-lg text-gray-300 mb-6"
         >
           Fly Above Traffic. Effortlessly.
         </motion.p>
@@ -71,7 +71,7 @@ export default function SplashScreen({ onComplete }) {
         transition={{ delay: 2, duration: 0.5 }}
         className="absolute bottom-10 text-center"
       >
-        <p className="text-gray-400 text-sm font-roboto">India's First Compact Electric eVTOL</p>
+        <p className="text-gray-400 text-sm font-sans">India's First Compact Electric eVTOL</p>
       </motion.div>
     </div>
   );

@@ -43,7 +43,7 @@ export default function BoardingPassScreen({ onNavigate, bookingData }) {
             >
               <ArrowLeft className="w-5 h-5" />
             </Button>
-            <h1 className="font-montserrat font-bold text-2xl text-white">Boarding Pass</h1>
+            <h1 className="font-michroma font-bold text-2xl text-white">Boarding Pass</h1>
           </div>
           <Button
             variant="ghost"
@@ -73,8 +73,8 @@ export default function BoardingPassScreen({ onNavigate, bookingData }) {
             ✓
           </motion.div>
         </div>
-        <h2 className="font-montserrat font-bold text-xl text-white">Booking Confirmed!</h2>
-        <p className="text-gray-400 font-roboto">Your eVTOL flight is ready</p>
+        <h2 className="font-michroma font-bold text-xl text-white">Booking Confirmed!</h2>
+        <p className="text-gray-400 font-sans">Your eVTOL flight is ready</p>
       </motion.div>
 
       {/* Boarding Pass */}
@@ -89,23 +89,23 @@ export default function BoardingPassScreen({ onNavigate, bookingData }) {
           <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-6 text-white">
             <div className="flex justify-between items-start mb-4">
               <div>
-                <h3 className="font-montserrat font-bold text-lg">RAD KRING AVIATION</h3>
-                <p className="font-roboto text-sm opacity-90">eVTOL Air Taxi</p>
+                <h3 className="font-michroma font-bold text-lg">RAD KRING AVIATION</h3>
+                <p className="font-sans text-sm opacity-90">eVTOL Air Taxi</p>
               </div>
               <div className="text-right">
-                <p className="font-roboto text-sm opacity-90">Booking Ref</p>
-                <p className="font-montserrat font-bold text-lg">{bookingRef}</p>
+                <p className="font-sans text-sm opacity-90">Booking Ref</p>
+                <p className="font-michroma font-bold text-lg">{bookingRef}</p>
               </div>
             </div>
             
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <p className="font-roboto text-sm opacity-90">From</p>
-                <p className="font-montserrat font-semibold">{bookingData.pickup?.split(' ')[0] || 'Mumbai'}</p>
+                <p className="font-sans text-sm opacity-90">From</p>
+                <p className="font-michroma font-semibold">{bookingData.pickup?.split(' ')[0] || 'Mumbai'}</p>
               </div>
               <div>
-                <p className="font-roboto text-sm opacity-90">To</p>
-                <p className="font-montserrat font-semibold">{bookingData.dropoff?.split(' ')[0] || 'Pune'}</p>
+                <p className="font-sans text-sm opacity-90">To</p>
+                <p className="font-michroma font-semibold">{bookingData.dropoff?.split(' ')[0] || 'Pune'}</p>
               </div>
             </div>
           </div>
@@ -115,18 +115,18 @@ export default function BoardingPassScreen({ onNavigate, bookingData }) {
             <div className="grid grid-cols-3 gap-4 mb-6">
               <div className="text-center">
                 <Clock className="w-6 h-6 text-orange-500 mx-auto mb-2" />
-                <p className="text-gray-400 text-sm font-roboto">Departure</p>
-                <p className="text-white font-montserrat font-semibold">{departureTime}</p>
+                <p className="text-gray-400 text-sm font-sans">Departure</p>
+                <p className="text-white font-michroma font-semibold">{departureTime}</p>
               </div>
               <div className="text-center">
                 <MapPin className="w-6 h-6 text-blue-500 mx-auto mb-2" />
-                <p className="text-gray-400 text-sm font-roboto">Gate</p>
-                <p className="text-white font-montserrat font-semibold">{gate}</p>
+                <p className="text-gray-400 text-sm font-sans">Gate</p>
+                <p className="text-white font-michroma font-semibold">{gate}</p>
               </div>
               <div className="text-center">
                 <Clock className="w-6 h-6 text-green-500 mx-auto mb-2" />
-                <p className="text-gray-400 text-sm font-roboto">Arrival</p>
-                <p className="text-white font-montserrat font-semibold">{arrivalTime}</p>
+                <p className="text-gray-400 text-sm font-sans">Arrival</p>
+                <p className="text-white font-michroma font-semibold">{arrivalTime}</p>
               </div>
             </div>
 
@@ -135,7 +135,7 @@ export default function BoardingPassScreen({ onNavigate, bookingData }) {
               <div className="w-32 h-32 bg-white rounded-xl mx-auto flex items-center justify-center mb-4">
                 <QrCode className="w-24 h-24 text-black" />
               </div>
-              <p className="text-gray-400 text-sm font-roboto">Scan at vertiport for boarding</p>
+              <p className="text-gray-400 text-sm font-sans">Scan at vertiport for boarding</p>
             </div>
 
             {/* Flight Route */}
@@ -143,7 +143,7 @@ export default function BoardingPassScreen({ onNavigate, bookingData }) {
               <div className="flex items-center justify-between">
                 <div className="text-center">
                   <div className="w-3 h-3 bg-green-500 rounded-full mx-auto mb-1" />
-                  <p className="text-white font-roboto font-medium text-sm">{bookingData.pickup?.split(' ')[0] || 'Mumbai'}</p>
+                  <p className="text-white font-sans font-medium text-sm">{bookingData.pickup?.split(' ')[0] || 'Mumbai'}</p>
                   <p className="text-gray-400 text-xs">{departureTime}</p>
                 </div>
                 <div className="flex-1 mx-4">
@@ -156,7 +156,7 @@ export default function BoardingPassScreen({ onNavigate, bookingData }) {
                 </div>
                 <div className="text-center">
                   <div className="w-3 h-3 bg-red-500 rounded-full mx-auto mb-1" />
-                  <p className="text-white font-roboto font-medium text-sm">{bookingData.dropoff?.split(' ')[0] || 'Pune'}</p>
+                  <p className="text-white font-sans font-medium text-sm">{bookingData.dropoff?.split(' ')[0] || 'Pune'}</p>
                   <p className="text-gray-400 text-xs">{arrivalTime}</p>
                 </div>
               </div>
@@ -174,7 +174,7 @@ export default function BoardingPassScreen({ onNavigate, bookingData }) {
       >
         <Button
           onClick={addToWallet}
-          className="w-full glass-panel text-white font-roboto font-medium py-4 rounded-xl hover:bg-white/20 transition-all"
+          className="w-full glass-panel text-white font-sans font-medium py-4 rounded-xl hover:bg-white/20 transition-all"
         >
           <Download className="w-5 h-5 mr-2" />
           Add to Apple Wallet
@@ -182,7 +182,7 @@ export default function BoardingPassScreen({ onNavigate, bookingData }) {
         
         <Button
           onClick={() => onNavigate('home')}
-          className="w-full gradient-orange text-white font-montserrat font-semibold py-4 rounded-xl glow-orange hover:scale-105 transition-all"
+          className="w-full gradient-orange text-white font-michroma font-semibold py-4 rounded-xl glow-orange hover:scale-105 transition-all"
         >
           <Calendar className="w-5 h-5 mr-2" />
           Book Another Flight

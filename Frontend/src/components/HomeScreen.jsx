@@ -30,7 +30,7 @@ export default function HomeScreen({ onNavigate }) {
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center space-x-2">
             <MapPin className="w-5 h-5 text-orange-500" />
-            <span className="text-white font-roboto">Mumbai, Maharashtra</span>
+            <span className="text-white font-sans">Mumbai, Maharashtra</span>
           </div>
           <Button
             variant="ghost"
@@ -50,7 +50,7 @@ export default function HomeScreen({ onNavigate }) {
         >
           <div className="flex items-center space-x-3">
             <Search className="w-5 h-5 text-gray-400" />
-            <span className="text-gray-300 font-roboto">Where would you like to fly today?</span>
+            <span className="text-gray-300 font-sans">Where would you like to fly today?</span>
           </div>
         </motion.div>
       </motion.div>
@@ -62,7 +62,7 @@ export default function HomeScreen({ onNavigate }) {
         transition={{ delay: 0.2 }}
         className="mx-6 mb-6"
       >
-        <h2 className="font-montserrat font-semibold text-xl text-white mb-4">Nearby Vertiports</h2>
+        <h2 className="font-michroma font-semibold text-xl text-white mb-4">Nearby Vertiports</h2>
         <div className="glass-panel rounded-2xl p-6 relative h-48 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20 rounded-2xl" />
           {vertiports.map((port, index) => (
@@ -76,7 +76,7 @@ export default function HomeScreen({ onNavigate }) {
             >
               <div className="w-4 h-4 bg-orange-500 rounded-full glow-orange cursor-pointer" 
                    onClick={() => toast({ title: "Vertiport Selected", description: `${port.name} selected as pickup point` })} />
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs text-white font-roboto whitespace-nowrap">
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs text-white font-sans whitespace-nowrap">
                 {port.name}
               </div>
             </motion.div>
@@ -91,7 +91,7 @@ export default function HomeScreen({ onNavigate }) {
         transition={{ delay: 0.4 }}
         className="px-6 mb-6"
       >
-        <h2 className="font-montserrat font-semibold text-xl text-white mb-4">Quick Options</h2>
+        <h2 className="font-michroma font-semibold text-xl text-white mb-4">Quick Options</h2>
         <div className="grid grid-cols-2 gap-4">
           {quickOptions.map((option, index) => (
             <motion.div
@@ -102,7 +102,7 @@ export default function HomeScreen({ onNavigate }) {
               onClick={() => toast({ title: "Service Selected", description: `${option.label} service coming soon!` })}
             >
               <option.icon className="w-8 h-8 text-white mb-2" />
-              <p className="font-roboto font-medium text-white">{option.label}</p>
+              <p className="font-sans font-medium text-white">{option.label}</p>
             </motion.div>
           ))}
         </div>
@@ -117,7 +117,7 @@ export default function HomeScreen({ onNavigate }) {
       >
         <Button
           onClick={() => onNavigate('booking')}
-          className="w-full gradient-orange text-white font-montserrat font-semibold text-lg py-6 rounded-2xl glow-orange hover:scale-105 transition-all"
+          className="w-full gradient-orange text-white font-michroma font-semibold text-lg py-6 rounded-2xl glow-orange hover:scale-105 transition-all"
         >
           Book Your Flight
         </Button>
@@ -131,7 +131,7 @@ export default function HomeScreen({ onNavigate }) {
           <Button
             variant="ghost"
             onClick={() => onNavigate('mr')}
-            className="text-blue-400 hover:text-blue-300 font-roboto"
+            className="text-blue-400 hover:text-blue-300 font-sans"
           >
             Experience MR Flight Simulation →
           </Button>

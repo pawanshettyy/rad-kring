@@ -47,7 +47,7 @@ export default function HomePage() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-4 max-w-3xl mx-auto font-roboto text-lg md:text-xl text-gray-300"
+              className="mt-4 max-w-3xl mx-auto font-sans text-lg md:text-xl text-gray-300"
             >
               Revolutionizing Urban Mobility—Affordable, Sustainable, Accessible.
             </motion.p>
@@ -57,10 +57,10 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <Button asChild size="lg" className="font-montserrat font-bold gradient-orange glow-orange text-white w-full sm:w-auto">
+              <Button asChild size="lg" className="font-michroma font-bold gradient-orange glow-orange text-white w-full sm:w-auto">
                 <Link to="/booking">Book Your Flight <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="font-montserrat font-bold border-neon-blue text-neon-blue hover:bg-neon-blue/10 hover:text-neon-blue glow-blue w-full sm:w-auto">
+              <Button asChild size="lg" variant="outline" className="font-michroma font-bold border-neon-blue text-neon-blue hover:bg-neon-blue/10 hover:text-neon-blue glow-blue w-full sm:w-auto">
                 <Link to="/product">Explore the eVTOL</Link>
               </Button>
             </motion.div>
@@ -107,7 +107,7 @@ export default function HomePage() {
              <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <h2 className="font-orbitron text-3xl md:text-5xl font-bold">Experience the Flight Before You Fly</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-gray-300">Our Mixed Reality centers let you experience the thrill of eVTOL flight in a stunningly realistic simulation.</p>
-                <Button asChild size="lg" className="mt-8 font-montserrat font-bold text-black bg-neon-blue hover:bg-neon-blue/80 glow-blue">
+                <Button asChild size="lg" className="mt-8 font-michroma font-bold text-black bg-neon-blue hover:bg-neon-blue/80 glow-blue">
                     <Link to="/mr-experience">Book Your MR Session <ArrowRight className="ml-2 h-5 w-5" /></Link>
                 </Button>
             </div>
