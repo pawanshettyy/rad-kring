@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 export default function MRExperienceTicketScreen({ bookingData, onBack }) {
   const bookingRef = `MR${Date.now().toString().slice(-6)}`;
-  const { region, subRegion, center, centerPrice, date, time } = bookingData;
+  const { region, subRegion, center, centerPrice, date, time, price } = bookingData;
 
   return (
     <div className="min-h-screen">
@@ -112,7 +112,7 @@ export default function MRExperienceTicketScreen({ bookingData, onBack }) {
             {/* Price */}
             <div className="glass-panel rounded-xl p-4 mb-4 text-center">
               <p className="text-gray-400 text-sm font-sans mb-1">Price</p>
-              <p className="text-orange-500 font-michroma font-bold text-2xl">₹{centerPrice}</p>
+              <p className="text-orange-500 font-michroma font-bold text-2xl">₹{centerPrice ?? price ?? 'N/A'}</p>
             </div>
           </div>
         </div>
