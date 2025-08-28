@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 
 const navLinks = [
   { name: 'Sankalpa v1', path: '/product' },
-  { name: 'Services', path: '/services' },
+  { name: 'MR Experience', path: '/mr-experience' },
   { name: 'Team', path: '/team' },
   { name: 'News', path: '/news' },
   { name: 'Contact', path: '/contact' },
@@ -45,7 +45,7 @@ export default function Navbar() {
           </div>
           <div className="hidden md:flex items-center space-x-4">
              <Button asChild variant="outline" className="font-montserrat font-bold text-neon-blue border-neon-blue hover:bg-neon-blue/10 hover:text-neon-blue glow-blue">
-                <Link to="/mr-experience">Experience in MR</Link>
+                <Link to="/pre-order">Pre-Order Now</Link>
             </Button>
             <Button asChild className="font-montserrat font-bold gradient-orange glow-orange text-white">
                 <Link to="/booking">Book Your Flight</Link>

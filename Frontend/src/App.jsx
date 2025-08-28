@@ -7,12 +7,12 @@ import Footer from '@/components/layout/Footer';
 
 import HomePage from '@/pages/HomePage';
 import ProductPage from '@/pages/ProductPage';
-import ServicesPage from '@/pages/ServicesPage';
 import TeamPage from '@/pages/TeamPage';
 import MRExperiencePage from '@/pages/MRExperiencePage';
 import NewsPage from '@/pages/NewsPage';
 import ContactPage from '@/pages/ContactPage';
 import BookingPage from '@/pages/BookingPage';
+import PreOrderPage from '@/pages/PreOrderPage';
 import NotFoundPage from '@/pages/NotFoundPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
@@ -28,13 +28,13 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<HomePage />} />
             <Route path="/product" element={<ProductPage />} />
-            <Route path="/services" element={<ServicesPage />} />
             <Route path="/team" element={<TeamPage />} />
             <Route path="/mr-experience" element={<MRExperiencePage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
             <Route path="/booking" element={<BookingPage />} />
+            <Route path="/pre-order" element={<PreOrderPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </AnimatePresence>
