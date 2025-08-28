@@ -56,16 +56,23 @@ export default function AboutPage() {
 
                 {/* Founders Section */}
                 <div className="mt-32 max-w-6xl mx-auto text-center px-4">
+                    {/* Radha Krishna Devotion Section */}
+                    <div className="mb-16 flex flex-col items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1641730259879-ad98e7db7bcb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmFkaGElMjBrcmlzaG5hfGVufDB8fDB8fHww" alt="Radha Krishna" className="w-[28rem] h-[28rem] object-cover rounded-2xl shadow-lg mb-6 border-4 border-orange-500" />
+                        <blockquote className="text-xl md:text-2xl italic text-orange-400 font-serif max-w-2xl mx-auto mb-2">
+                            "Let your work be your worship, and let your journey be guided by love and devotion."
+                        </blockquote>
+                        <p className="text-gray-300 text-base md:text-lg mb-2">We dedicate RAD KRING AVIATION to the divine presence of Radha Krishna, whose love and wisdom inspire our mission and every step of our journey.</p>
+                    </div>
                     <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-white mb-4">
-                        Meet the Founders
+                        Meet the Founder
                     </h2>
                     <p className="text-gray-400 text-lg max-w-3xl mx-auto mb-12">
-                        Behind RAD KRING AVIATION is a duo of relentless innovators with a shared vision: to engineer the most immersive and intelligent aviation experiences of tomorrow. Their leadership drives our mission to blend aerospace with emerging tech.
+                        Behind RAD KRING AVIATION is a relentless innovator with a vision: to engineer the most immersive and intelligent aviation experiences of tomorrow. His leadership drives our mission to blend aerospace with emerging tech.
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                        {/* Founder 1 */}
-                        <div className="bg-orange-600 rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex justify-center">
+                        <div className="bg-orange-600 rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-md w-full">
                             <img
                                 src="src/images/chaitanya.jpg"
                                 alt="Chaitanya Mehta"
@@ -77,39 +84,6 @@ export default function AboutPage() {
                                 <div className="mt-2">
                                     <a
                                         href="https://www.linkedin.com/in/chaitanya-mehta-0019b02b2"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-block text-black hover:text-blue-600"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 
-                                            1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 
-                                            12.248V6.169H2.542v7.225h2.401zm-1.2-8.21c.837 
-                                            0 1.358-.554 1.358-1.248-.015-.71-.521-1.248-1.342-1.248-.821 
-                                            0-1.358.538-1.358 1.248 0 .694.521 1.248 
-                                            1.327 1.248h.015zm4.908 8.21h2.4v-4.016c0-.214.016-.428.079-.58.173-.428.568-.872 
-                                            1.232-.872.869 0 1.217.658 1.217 1.623v3.845h2.4V9.4c0-2.025-1.082-2.964-2.526-2.964-1.165 
-                                            0-1.688.645-1.977 1.096h.016v-0.939h-2.4c.031.606 
-                                            0 7.225 0 7.225z"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Founder 2 */}
-                        <div className="bg-orange-600 rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                            <img
-                                src='src/images/harsh.jpg'
-                                alt="Harsh Mehta"
-                                className="w-full rounded-2xl object-cover h-[400px]"
-                            />
-                            <div className="mt-4 px-2 text-center">
-                                <h3 className="text-black text-xl font-semibold font-orbitron">HARSH MEHTA</h3>
-                                <p className="text-black text-sm font-semibold mt-1">Co-Founder & CEO</p>
-                                <div className="mt-2">
-                                    <a
-                                        href="https://www.linkedin.com/in/harsh--mehta"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-block text-black hover:text-blue-600"
