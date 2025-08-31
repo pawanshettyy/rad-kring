@@ -18,7 +18,7 @@ export default function ProductPage() {
             >
                 <div className="max-w-5xl w-full bg-gradient-to-br from-black/80 via-gray-900/80 to-black/80 rounded-3xl shadow-2xl p-6 md:p-8 backdrop-blur-2xl border border-gray-900/80">
                     <div className="mb-6">
-                        <img src="/src/images/Under Sky Roof.png" alt="Sankalpa v1 Hero" className="w-full h-[220px] md:h-[320px] object-cover rounded-2xl shadow-2xl border border-gray-700 mb-4" />
+                        <img src="/images/Under Sky Roof.png" alt="Sankalpa v1 Hero" className="w-full h-[220px] md:h-[320px] object-cover rounded-2xl shadow-2xl border border-gray-700 mb-4" />
                         <div className="text-center">
                             <h1 className="font-orbitron text-4xl md:text-5xl font-extrabold text-glacier-white mb-2 tracking-tight drop-shadow-lg">Sankalpa v1</h1>
                             <h2 className="text-xl font-semibold text-electric-orange mb-3">Flagship eVTOL Vehicle</h2>
@@ -71,9 +71,9 @@ export default function ProductPage() {
                         </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center mt-6">
-                        <img src="/src/images/Fly in Sky.png" alt="Sankalpa v1 Mock 1" className="w-full h-40 md:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" />
-                        <img src="/src/images/Interior View Sky Roof.png" alt="Sankalpa v1 Mock 2" className="w-full h-40 md:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" />
-                        <img src="/src/images/the Bridge Ortho2.png" alt="Sankalpa v1 Mock 3" className="w-full h-40 md:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" />
+                        <img src="/images/Fly in Sky.png" alt="Sankalpa v1 Mock 1" className="w-full h-40 md:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" />
+                        <img src="/images/Interior View Sky Roof.png" alt="Sankalpa v1 Mock 2" className="w-full h-40 md:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" />
+                        <img src="/images/the Bridge Ortho2.png" alt="Sankalpa v1 Mock 3" className="w-full h-40 md:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" />
                     </div>
                     <div className="mt-8 text-gray-300 text-base md:text-lg leading-relaxed">
                         <h2 className="text-2xl font-bold text-glacier-white mb-4">Why Sankalpa v1?</h2>

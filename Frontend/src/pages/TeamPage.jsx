@@ -74,7 +74,7 @@ export default function AboutPage() {
                     <div className="flex justify-center">
                         <div className="bg-orange-600 rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-md w-full">
                             <img
-                                src="src/images/chaitanya.jpg"
+                                src="/images/chaitanya.jpg"
                                 alt="Chaitanya Mehta"
                                 className="w-full rounded-2xl object-cover h-[400px]"
                             />
