@@ -58,7 +58,7 @@ export default function AboutPage() {
                 <div className="mt-32 max-w-6xl mx-auto text-center px-4">
                     {/* Radha Krishna Devotion Section */}
                     <div className="mb-16 flex flex-col items-center justify-center">
-                        <img src="/images/radha-krishna.jpeg" alt="Radha Krishna" className="w-[28rem] h-[28rem] object-cover rounded-2xl shadow-lg mb-6 border-4 border-orange-500" />
+                        <img src="/images/radha-krishna.webp" alt="Radha Krishna" className="w-[28rem] h-[28rem] object-cover rounded-2xl shadow-lg mb-6 border-4 border-orange-500" loading="lazy" />
                         <blockquote className="text-xl md:text-2xl italic text-orange-400 font-serif max-w-2xl mx-auto mb-2">
                             "Let your work be your worship, and let your journey be guided by love and devotion."
                         </blockquote>
@@ -74,9 +74,10 @@ export default function AboutPage() {
                     <div className="flex justify-center">
                         <div className="bg-orange-600 rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-md w-full">
                             <img
-                                src="/images/chaitanya.jpg"
+                                src="/images/chaitanya.webp"
                                 alt="Chaitanya Mehta"
                                 className="w-full rounded-2xl object-cover h-[400px]"
+                                loading="lazy"
                             />
                             <div className="mt-4 px-2 text-center">
                                 <h3 className="text-black text-xl font-semibold font-orbitron">CHAITANYA MEHTA</h3>

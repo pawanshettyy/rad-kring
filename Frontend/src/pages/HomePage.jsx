@@ -63,7 +63,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-black overflow-hidden">
             <video
               className="absolute inset-0 w-full h-full object-cover opacity-30"
-              src="/videos/bg-home.mp4"
+              src="/videos/bg-home.webm"
               autoPlay
               muted
               loop

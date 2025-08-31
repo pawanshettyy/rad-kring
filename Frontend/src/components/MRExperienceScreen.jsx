@@ -167,10 +167,10 @@ export default function MRExperienceScreen({ onNavigate }) {
         >
           <div className="glass-panel rounded-2xl p-6 text-center">
             <div className="mb-4">
-              <img 
-                className="w-full h-80 object-cover rounded-xl" 
-                alt="Mixed Reality eVTOL flight simulation experience"
-                src="/images/Interior View Sky Roof.png" />
+                <img 
+                  className="w-full h-80 object-cover rounded-xl" 
+                  alt="Mixed Reality eVTOL flight simulation experience"
+                  src="/images/Interior View Sky Roof.webp" loading="lazy" />
             </div>
             <h2 className="font-michroma font-bold text-xl text-white mb-2">Virtual Flight Experience</h2>
             <p className="text-gray-400 font-sans mb-4">
