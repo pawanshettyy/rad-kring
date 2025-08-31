@@ -7,10 +7,43 @@ import { ArrowRight, Cpu, Users, Zap, Shield } from 'lucide-react';
 
 export default function HomePage() {
   const features = [
-    { icon: Cpu, title: "Level 5 Autonomy", description: "Advanced AI for the safest, most reliable flights." },
-    { icon: Users, title: "6 Passenger Capacity", description: "Spacious interiors for a comfortable journey." },
-    { icon: Zap, title: "Electric Propulsion", description: "20 silent EDFs for a zero-emission experience." },
-    { icon: Shield, title: "Ballistic Parachute", description: "Ultimate safety with a whole-aircraft parachute system." },
+    { icon: Cpu, title: "Key Specifications", description: (
+      <ul className="text-left list-disc pl-5">
+        <li>Speed: 300 km/h</li>
+        <li>Range: 500 km</li>
+        <li>Number of Passengers: 4</li>
+        <li>Noise Level: 65 dB</li>
+        <li>MTOW: 2,100 kg</li>
+        <li>Carbon Emission: 0 %</li>
+        <li>Fully Electric: 100 %</li>
+      </ul>
+    ) },
+    { icon: Users, title: "Use Cases", description: (
+      <ul className="text-left list-disc pl-5">
+        <li>Urban Air Taxi</li>
+        <li>Corporate & VIP Transport</li>
+        <li>Medical Emergency Response</li>
+        <li>Tourism & Sightseeing</li>
+        <li>Regional Commuter</li>
+        <li>Special Events & Charters</li>
+      </ul>
+    ) },
+    { icon: Zap, title: "Cabin & Comfort", description: (
+      <ul className="text-left list-disc pl-5">
+        <li>Spacious cabin for 4 passengers</li>
+        <li>Panoramic glass roof</li>
+        <li>Active noise cancellation</li>
+        <li>Climate control & ambient lighting</li>
+      </ul>
+    ) },
+    { icon: Shield, title: "Safety & Tech", description: (
+      <ul className="text-left list-disc pl-5">
+        <li>Autonomous flight systems</li>
+        <li>Redundant flight controls</li>
+        <li>360° obstacle detection</li>
+        <li>Emergency ballistic parachute</li>
+      </ul>
+    ) },
   ];
 
   return (
@@ -28,10 +61,17 @@ export default function HomePage() {
           className="relative h-screen flex items-center justify-center text-center text-white"
         >
           <div className="absolute inset-0 bg-black overflow-hidden">
-            <img 
-              alt="Futuristic eVTOL flying over a smart city skyline at dusk"
+            <video
               className="absolute inset-0 w-full h-full object-cover opacity-30"
-             src="https://images.unsplash.com/photo-1635749045239-abe854bcec47" />
+              src="src/videos/bg-home.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              disablePictureInPicture
+              controls={false}
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-jet-black via-jet-black/70 to-transparent"></div>
           </div>
           <div className="relative z-10 p-4">
@@ -97,13 +137,13 @@ export default function HomePage() {
 
         {/* MR Experience CTA */}
         <section className="relative py-24 my-20">
-            <div className="absolute inset-0 bg-black overflow-hidden">
+            {/* <div className="absolute inset-0 bg-black overflow-hidden">
                 <img  
                     alt="Person wearing a VR headset experiencing a flight simulation"
                     className="absolute inset-0 w-full h-full object-cover opacity-20"
                  src="https://images.unsplash.com/photo-1552871419-81ba9b1aa9c9" />
                 <div className="absolute inset-0 bg-gradient-to-r from-jet-black via-transparent to-jet-black"></div>
-            </div>
+            </div> */}
              <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <h2 className="font-orbitron text-3xl md:text-5xl font-bold">Experience the Flight Before You Fly</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-gray-300">Our Mixed Reality centers let you experience the thrill of eVTOL flight in a stunningly realistic simulation.</p>

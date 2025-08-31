@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
+
 import HomePage from '@/pages/HomePage';
 import ProductPage from '@/pages/ProductPage';
 import TeamPage from '@/pages/TeamPage';
@@ -15,6 +16,7 @@ import BookingPage from '@/pages/BookingPage';
 import PreOrderPage from '@/pages/PreOrderPage';
 import NotFoundPage from '@/pages/NotFoundPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import CareersPage from '@/components/CareersPage';
 
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
             <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
             <Route path="/booking" element={<BookingPage />} />
             <Route path="/pre-order" element={<PreOrderPage />} />
+            <Route path="/careers" element={<CareersPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </AnimatePresence>

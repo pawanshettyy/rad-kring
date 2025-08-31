@@ -43,7 +43,7 @@ export default function Footer() {
                         <p className="font-orbitron font-bold text-glacier-white tracking-wider uppercase">Quick Links</p>
                         <ul className="mt-4 space-y-3">
                             <li><Link to="/product" className="text-gray-400 hover:text-electric-orange transition-colors">Sankalpa v1</Link></li>
-                            <li><Link to="/services" className="text-gray-400 hover:text-electric-orange transition-colors">Services</Link></li>
+                            <li><Link to="/careers" className="text-gray-400 hover:text-electric-orange transition-colors">Careers</Link></li>
                             <li><Link to="/booking" className="text-gray-400 hover:text-electric-orange transition-colors">Book a Flight</Link></li>
                             <li><Link to="/mr-experience" className="text-gray-400 hover:text-electric-orange transition-colors">MR Experience</Link></li>
                         </ul>
