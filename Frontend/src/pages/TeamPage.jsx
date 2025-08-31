@@ -58,7 +58,7 @@ export default function AboutPage() {
                 <div className="mt-32 max-w-6xl mx-auto text-center px-4">
                     {/* Radha Krishna Devotion Section */}
                     <div className="mb-16 flex flex-col items-center justify-center">
-                        <img src="https://images.unsplash.com/photo-1641730259879-ad98e7db7bcb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmFkaGElMjBrcmlzaG5hfGVufDB8fDB8fHww" alt="Radha Krishna" className="w-[28rem] h-[28rem] object-cover rounded-2xl shadow-lg mb-6 border-4 border-orange-500" />
+                        <img src="/images/radha-krishna.jpg" alt="Radha Krishna" className="w-[28rem] h-[28rem] object-cover rounded-2xl shadow-lg mb-6 border-4 border-orange-500" />
                         <blockquote className="text-xl md:text-2xl italic text-orange-400 font-serif max-w-2xl mx-auto mb-2">
                             "Let your work be your worship, and let your journey be guided by love and devotion."
                         </blockquote>

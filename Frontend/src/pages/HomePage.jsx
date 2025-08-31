@@ -141,7 +141,7 @@ export default function HomePage() {
                 <img  
                     alt="Person wearing a VR headset experiencing a flight simulation"
                     className="absolute inset-0 w-full h-full object-cover opacity-20"
-                 src="https://images.unsplash.com/photo-1552871419-81ba9b1aa9c9" />
+                 src="/images/vr-experience.jpg" />
                 <div className="absolute inset-0 bg-gradient-to-r from-jet-black via-transparent to-jet-black"></div>
             </div> */}
              <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
