@@ -99,7 +99,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-white mb-1">Phone</h3>
-                                        <p className="text-gray-400">+91 (555) 123-4567</p>
+                                        <p className="text-gray-400">+91 84465 52943</p>
                                     </div>
                                 </div>
 
@@ -109,11 +109,11 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-white mb-1">Email</h3>
-                                        <p className="text-gray-400">contact@radkringaviation.com</p>
+                                        <p className="text-gray-400">info@radkring.com</p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-start space-x-4">
+                                {/* <div className="flex items-start space-x-4">
                                     <div className="bg-gray-800 p-3 rounded-lg">
                                         <Clock className="w-6 h-6 text-orange-500" />
                                     </div>
@@ -122,9 +122,9 @@ export default function ContactPage() {
                                         <p className="text-gray-400">Mon - Fri: 9:00 AM - 6:00 PM</p>
                                         <p className="text-gray-400">Saturday: 10:00 AM - 4:00 PM</p>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="flex items-start space-x-4">
+                                {/* <div className="flex items-start space-x-4">
                                     <div className="bg-gray-800 p-3 rounded-lg">
                                         <MapPin className="w-6 h-6 text-orange-500" />
                                     </div>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                                         <p className="text-gray-400">Aviation Hub, India</p>
                                         <p className="text-gray-400">Made in India, Built for the World.</p>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </motion.div>

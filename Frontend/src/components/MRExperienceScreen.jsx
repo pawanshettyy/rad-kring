@@ -19,7 +19,7 @@ export default function MRExperienceScreen({ onNavigate }) {
 
   const regions = {
     'Mumbai': [
-      { id: 1, name: 'Mumbai VR Hub', location: 'Bandra West', price: 1500 },
+      { id: 1, name: 'Churchgate VR Hub', location: 'Churchgate', price: 1500 },
       { id: 2, name: 'Mumbai Tech Center', location: 'Andheri East', price: 1400 },
       { id: 3, name: 'Mumbai Innovation Lab', location: 'Powai', price: 1600 }
     ],

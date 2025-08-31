@@ -13,8 +13,8 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
   const [currentStep, setCurrentStep] = useState('region'); // 'region', 'locations', 'booking'
 
   const regions = {
-    'Mumbai': [
-    'Mumbai Central Vertiport',
+  'Mumbai': [
+  'Churchgate Vertiport',
       'Bandra West Hub',
       'Andheri East Terminal',
       'Powai Sky Station',
