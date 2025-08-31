@@ -43,7 +43,7 @@ export default function PaymentScreen({ onNavigate, bookingData, goBack }) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
+    <div className="min-h-screen background-grid">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}

@@ -7,8 +7,6 @@ import AircraftSelectionScreen from '@/components/AircraftSelectionScreen';
 import PaymentScreen from '@/components/PaymentScreen';
 import BoardingPassScreen from '@/components/BoardingPassScreen';
 
-const bookingSteps = ['booking', 'pricing', 'aircraft', 'payment', 'boarding'];
-
 export default function BookingPage() {
     const [currentStep, setCurrentStep] = useState('booking');
     const [bookingData, setBookingData] = useState({});
@@ -44,8 +42,8 @@ export default function BookingPage() {
                 <title>Book Your eVTOL Flight - RAD KRING AVIATION</title>
                 <meta name="description" content="Seamlessly book your eVTOL air taxi flight with RAD KRING AVIATION. Select your route, aircraft, and payment method." />
             </Helmet>
-              <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center px-4 py-8">
-                  <div className="max-w-4xl w-full mx-auto glass-panel rounded-2xl overflow-hidden">
+            <div className="min-h-screen background-grid flex items-center justify-center px-4 py-8">
+                <div className="max-w-4xl w-full mx-auto glass-panel rounded-2xl overflow-hidden">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={currentStep}
