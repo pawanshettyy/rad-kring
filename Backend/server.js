@@ -27,6 +27,10 @@ app.use('/api/preorder', preorderRoutes);
 app.use('/api/newsletter', newsletterRoutes);
 
 const PORT = process.env.PORT || 5000;
+// Root route for Render health check and browser visits
+app.get('/', (req, res) => {
+  res.send('Backend is running!');
+});
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
