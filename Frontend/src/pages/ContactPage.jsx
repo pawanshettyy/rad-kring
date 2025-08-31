@@ -124,16 +124,16 @@ export default function ContactPage() {
                                     </div>
                                 </div> */}
 
-                                {/* <div className="flex items-start space-x-4">
+                                <div className="flex items-start space-x-4">
                                     <div className="bg-gray-800 p-3 rounded-lg">
                                         <MapPin className="w-6 h-6 text-orange-500" />
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-white mb-1">Location</h3>
-                                        <p className="text-gray-400">Aviation Hub, India</p>
+                                        <p className="text-gray-400">Block 5, TCET, Thakur village, <br />Kandivali East, Mumbai, <br />Maharashtra, India 400101</p>
                                         <p className="text-gray-400">Made in India, Built for the World.</p>
                                     </div>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </motion.div>
