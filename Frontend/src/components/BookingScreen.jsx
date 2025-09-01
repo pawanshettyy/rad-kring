@@ -66,6 +66,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
   const handleRegionSelect = (region) => {
     setSelectedRegion(region);
     setCurrentStep('locations');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleBackToRegion = () => {
@@ -74,6 +75,7 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
     setPickup('');
     setDropoff('');
     setDistance(0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleLocationSelect = (location, type) => {

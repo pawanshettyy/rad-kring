@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTop from '@/components/ScrollToTop';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Toaster } from '@/components/ui/toaster';
@@ -24,7 +25,8 @@ function App() {
 
   return (
     <div className="flex flex-col min-h-screen background-grid">
-      <Navbar />
+  <ScrollToTop />
+  <Navbar />
       <main className="flex-grow">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>

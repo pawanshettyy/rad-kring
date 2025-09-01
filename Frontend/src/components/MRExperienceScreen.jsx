@@ -48,22 +48,26 @@ export default function MRExperienceScreen({ onNavigate }) {
   const handleRegionSelect = (region) => {
     setSelectedRegion(region);
     setCurrentStep('center');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleCenterSelect = (centerId) => {
     setSelectedCenter(centerId);
     setCurrentStep('booking');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleBackToRegion = () => {
     setCurrentStep('region');
     setSelectedRegion('');
     setSelectedCenter('');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleBackToCenter = () => {
     setCurrentStep('center');
     setSelectedCenter('');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleBooking = () => {
@@ -100,6 +104,7 @@ export default function MRExperienceScreen({ onNavigate }) {
     setSelectedCenter('');
     setSelectedDate('');
     setSelectedTime('');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const getSelectedCenterData = () => {
