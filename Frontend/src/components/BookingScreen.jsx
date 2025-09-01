@@ -116,8 +116,9 @@ export default function BookingScreen({ onNavigate, onBookingUpdate, goBack }) {
       estimatedFare: calculateFare(distance, returnFlight),
       returnFlight
     };
-    
+
     onBookingUpdate(bookingData);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     onNavigate('pricing');
   };
 

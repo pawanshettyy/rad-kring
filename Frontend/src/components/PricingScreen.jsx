@@ -60,7 +60,13 @@ export default function PricingScreen({ onNavigate, bookingData, goBack }) {
           <Button
             variant="ghost"
             size="icon"
-            onClick={goBack}
+            onClick={() => {
+              if (typeof goBack === 'function') {
+                goBack();
+              } else if (typeof onNavigate === 'function') {
+                onNavigate('home'); // fallback to home or previous
+              }
+            }}
             className="text-white hover:bg-white/10"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -76,7 +82,7 @@ export default function PricingScreen({ onNavigate, bookingData, goBack }) {
         transition={{ delay: 0.1 }}
         className="mx-6 mb-6"
       >
-        <div className="glass-panel rounded-2xl p-4 bg-gradient-to-r from-green-500/20 to-blue-500/20">
+  <div className="glass-panel rounded-2xl p-4">
           <div className="flex items-center space-x-3">
             <Leaf className="w-8 h-8 text-green-400" />
             <div>
@@ -162,7 +168,10 @@ export default function PricingScreen({ onNavigate, bookingData, goBack }) {
         className="px-6 pt-8 pb-20"
       >
         <Button
-          onClick={() => onNavigate('aircraft')}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            onNavigate('aircraft');
+          }}
           className="w-full gradient-orange text-white font-michroma font-semibold text-lg py-6 rounded-2xl glow-orange hover:scale-105 transition-all"
         >
           Select Aircraft & Time

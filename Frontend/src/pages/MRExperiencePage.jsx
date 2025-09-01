@@ -18,11 +18,9 @@ export default function MRExperiencePage() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="container mx-auto px-4 py-8"
+                className="w-full px-2 md:px-4 py-6 md:py-8 flex flex-col items-center"
             >
-                {/* We can reuse the detailed component created for mobile view for now */}
-                {/* It will need styling adjustments to fit a full page layout later */}
-                <div className="max-w-4xl mx-auto">
+                <div className="w-full max-w-full md:max-w-4xl mx-auto">
                      <MRExperienceScreen onNavigate={mockNavigate} />
                 </div>
             </motion.div>

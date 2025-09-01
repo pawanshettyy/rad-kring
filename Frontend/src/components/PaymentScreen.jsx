@@ -38,6 +38,7 @@ export default function PaymentScreen({ onNavigate, bookingData, goBack }) {
     
     // Simulate payment success and navigate to boarding pass
     setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       onNavigate('boarding');
     }, 2000);
   };
@@ -54,7 +55,13 @@ export default function PaymentScreen({ onNavigate, bookingData, goBack }) {
           <Button
             variant="ghost"
             size="icon"
-            onClick={goBack}
+            onClick={() => {
+              if (typeof goBack === 'function') {
+                goBack();
+              } else if (typeof onNavigate === 'function') {
+                onNavigate('aircraft'); // fallback to aircraft selection or previous
+              }
+            }}
             className="text-white hover:bg-white/10"
           >
             <ArrowLeft className="w-5 h-5" />

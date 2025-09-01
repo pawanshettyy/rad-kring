@@ -208,7 +208,7 @@ export default function NewsPage() {
     };
 
     return (
-        <div className="min-h-screen   text-white">
+        <div className="min-h-screen text-white">
             {/* Header Section */}
             <div className="container mx-auto px-4 py-20">
                 <motion.div
@@ -223,7 +223,6 @@ export default function NewsPage() {
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed">
                         Stay updated with the latest developments in autonomous aviation and cutting-edge flight technology
                     </p>
-                    
                     {/* Refresh Button and Last Updated */}
                     <div className="flex items-center justify-center gap-6 text-gray-400 flex-wrap">
                         <button
@@ -248,23 +247,25 @@ export default function NewsPage() {
                         )}
                     </div>
                 </motion.div>
-
-                {/* Loading State */}
+                {/* Loading Spinner */}
                 {loading && (
-                    <motion.div 
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        className="flex flex-col justify-center items-center py-20"
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="w-full px-2 md:px-4 py-6 md:py-8 mx-auto"
                     >
-                        <div className="relative">
-                            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-cyan-500"></div>
-                            <div className="animate-spin rounded-full h-16 w-16 border-r-2 border-l-2 border-orange-500 absolute top-0 left-0" style={{animationDirection: 'reverse', animationDuration: '1.5s'}}></div>
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <Plane className="w-6 h-6 text-cyan-400 animate-pulse" />
+                        <div className="flex flex-col justify-center items-center py-20">
+                            <div className="relative">
+                                <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-cyan-500"></div>
+                                <div className="animate-spin rounded-full h-16 w-16 border-r-2 border-l-2 border-orange-500 absolute top-0 left-0" style={{animationDirection: 'reverse', animationDuration: '1.5s'}}></div>
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <Plane className="w-6 h-6 text-cyan-400 animate-pulse" />
+                                </div>
                             </div>
+                            <p className="text-gray-400 mt-4 text-lg">Loading fresh eVTOL news...</p>
+                            <p className="text-gray-500 mt-2 text-sm">Discovering the latest innovations</p>
                         </div>
-                        <p className="text-gray-400 mt-4 text-lg">Loading fresh eVTOL news...</p>
-                        <p className="text-gray-500 mt-2 text-sm">Discovering the latest innovations</p>
                     </motion.div>
                 )}
 

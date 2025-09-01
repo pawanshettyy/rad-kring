@@ -42,8 +42,8 @@ export default function BookingPage() {
                 <title>Book Your eVTOL Flight - RAD KRING AVIATION</title>
                 <meta name="description" content="Seamlessly book your eVTOL air taxi flight with RAD KRING AVIATION. Select your route, aircraft, and payment method." />
             </Helmet>
-            <div className="min-h-screen background-grid flex items-center justify-center px-4 py-8">
-                <div className="max-w-4xl w-full mx-auto glass-panel rounded-2xl overflow-hidden">
+            <div className="min-h-screen background-grid flex items-center justify-center px-2 md:px-4 py-6 md:py-8 w-full">
+                <div className="max-w-full md:max-w-4xl w-full mx-auto glass-panel rounded-2xl overflow-hidden">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={currentStep}

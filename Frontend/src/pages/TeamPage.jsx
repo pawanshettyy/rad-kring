@@ -14,10 +14,10 @@ export default function AboutPage() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="min-h-screen w-full px-6 md:px-16 py-20 text-white"
+                className="min-h-screen w-full px-4 md:px-16 py-10 md:py-20 text-white"
             >
                 {/* Intro */}
-                <div className="max-w-5xl mx-auto text-center">
+                <div className="max-w-full md:max-w-5xl mx-auto text-center">
                     <h1 className="font-orbitron text-4xl md:text-6xl font-bold mb-6">
                         Made in India. Built for the World.
                     </h1>
@@ -27,7 +27,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Sections */}
-                <div className="mt-20 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+                <div className="mt-10 md:mt-20 max-w-full md:max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
                     <div>
                         <h2 className="font-orbitron text-2xl md:text-3xl text-orange-500 mb-4">Our Philosophy</h2>
                         <p className="text-gray-400 text-base md:text-lg leading-relaxed">
@@ -55,10 +55,10 @@ export default function AboutPage() {
                 </div>
 
                 {/* Founders Section */}
-                <div className="mt-32 max-w-6xl mx-auto text-center px-4">
+                <div className="mt-16 md:mt-32 max-w-full md:max-w-6xl mx-auto text-center px-2 md:px-4">
                     {/* Radha Krishna Devotion Section */}
-                    <div className="mb-16 flex flex-col items-center justify-center">
-                        <img src="/images/radha-krishna.webp" alt="Radha Krishna" className="w-[28rem] h-[28rem] object-cover rounded-2xl shadow-lg mb-6 border-4 border-orange-500" loading="lazy" />
+                    <div className="mb-8 md:mb-16 flex flex-col items-center justify-center">
+                        <img src="/images/radha-krishna.webp" alt="Radha Krishna" className="w-full max-w-xs md:max-w-lg h-auto md:h-[28rem] object-cover rounded-2xl shadow-lg mb-6 border-4 border-orange-500" loading="lazy" />
                         <blockquote className="text-xl md:text-2xl italic text-orange-400 font-serif max-w-2xl mx-auto mb-2">
                             "Let your work be your worship, and let your journey be guided by love and devotion."
                         </blockquote>

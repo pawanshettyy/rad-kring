@@ -58,13 +58,13 @@ export default function ContactPage() {
     ];
 
     return (
-        <div className="min-h-screen  text-white">
+    <div className="min-h-screen text-white w-full">
             {/* Main Content */}
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="container mx-auto px-6 py-16"
+                className="w-full px-4 md:px-6 py-8 md:py-16 mx-auto"
             >
                 {/* Hero Section */}
                 <motion.div

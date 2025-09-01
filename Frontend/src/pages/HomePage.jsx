@@ -52,17 +52,17 @@ export default function HomePage() {
         <title>RAD KRING AVIATION - Revolutionizing Urban Mobility</title>
         <meta name="description" content="Welcome to RAD KRING AVIATION. We are revolutionizing urban mobility with affordable, sustainable, and accessible eVTOL aircraft." />
       </Helmet>
-      <div className="overflow-hidden">
+  <div className="overflow-hidden w-full">
         {/* Hero Section */}
         <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative h-screen flex items-center justify-center text-center text-white"
+          className="relative min-h-[60vh] flex flex-col items-center justify-center text-center text-white px-4 md:px-8"
         >
-          <div className="absolute inset-0 bg-black overflow-hidden">
+          <div className="absolute inset-0 bg-black overflow-hidden w-full h-full">
             <video
-              className="absolute inset-0 w-full h-full object-cover opacity-30"
+              className="absolute inset-0 w-full h-full object-cover opacity-30 max-h-[60vh] md:max-h-[80vh]"
               src="/videos/bg-home.webm"
               autoPlay
               muted
@@ -74,7 +74,7 @@ export default function HomePage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-jet-black via-jet-black/70 to-transparent"></div>
           </div>
-          <div className="relative z-10 p-4">
+          <div className="relative z-10 p-4 w-full max-w-xl md:max-w-2xl">
             <motion.h1 
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

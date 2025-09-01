@@ -14,11 +14,11 @@ export default function ProductPage() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="min-h-screen bg-background-grid flex items-center justify-center px-4 py-12"
+                className="min-h-screen bg-background-grid flex flex-col items-center justify-center px-2 md:px-4 py-8 md:py-12 w-full"
             >
-                <div className="max-w-5xl w-full bg-gradient-to-br from-black/80 via-gray-900/80 to-black/80 rounded-3xl shadow-2xl p-6 md:p-8 backdrop-blur-2xl border border-gray-900/80">
+                <div className="max-w-full md:max-w-5xl w-full bg-gradient-to-br from-black/80 via-gray-900/80 to-black/80 rounded-3xl shadow-2xl p-4 md:p-8 backdrop-blur-2xl border border-gray-900/80">
                     <div className="mb-6">
-                        <img src="/images/Under Sky Roof.webp" alt="Sankalpa v1 Hero" className="w-full h-[220px] md:h-[320px] object-cover rounded-2xl shadow-2xl border border-gray-700 mb-4" loading="lazy" />
+                        <img src="/images/Under Sky Roof.webp" alt="Sankalpa v1 Hero" className="w-full h-48 md:h-[220px] lg:h-[320px] object-cover rounded-2xl shadow-2xl border border-gray-700 mb-4" loading="lazy" />
                         <div className="text-center">
                             <h1 className="font-orbitron text-4xl md:text-5xl font-extrabold text-glacier-white mb-2 tracking-tight drop-shadow-lg">Sankalpa v1</h1>
                             <h2 className="text-xl font-semibold text-electric-orange mb-3">Flagship eVTOL Vehicle</h2>
@@ -71,9 +71,9 @@ export default function ProductPage() {
                         </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center mt-6">
-                        <img src="/images/Fly in Sky.webp" alt="Sankalpa v1 Mock 1" className="w-full h-40 md:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" loading="lazy" />
-                        <img src="/images/Interior View Sky Roof.webp" alt="Sankalpa v1 Mock 2" className="w-full h-40 md:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" loading="lazy" />
-                        <img src="/images/the Bridge Ortho2.webp" alt="Sankalpa v1 Mock 3" className="w-full h-40 md:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" loading="lazy" />
+                        <img src="/images/Fly in Sky.webp" alt="Sankalpa v1 Mock 1" className="w-full h-32 md:h-40 lg:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" loading="lazy" />
+                        <img src="/images/Interior View Sky Roof.webp" alt="Sankalpa v1 Mock 2" className="w-full h-32 md:h-40 lg:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" loading="lazy" />
+                        <img src="/images/the Bridge Ortho2.webp" alt="Sankalpa v1 Mock 3" className="w-full h-32 md:h-40 lg:h-48 rounded-xl shadow-xl border border-gray-700 object-cover" loading="lazy" />
                     </div>
                     <div className="mt-8 text-gray-300 text-base md:text-lg leading-relaxed">
                         <h2 className="text-2xl font-bold text-glacier-white mb-4">Why Sankalpa v1?</h2>

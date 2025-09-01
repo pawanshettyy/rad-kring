@@ -15,9 +15,9 @@ export default function PreOrderPage() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="min-h-screen bg-background-grid flex items-center justify-center px-4 py-12"
+                className="min-h-screen bg-background-grid flex items-center justify-center px-2 md:px-4 py-8 md:py-12 w-full"
             >
-                <div className="max-w-2xl w-full bg-jet-black/80 rounded-3xl shadow-2xl p-8 backdrop-blur-2xl border border-gray-800 text-center">
+                <div className="max-w-full md:max-w-2xl w-full bg-jet-black/80 rounded-3xl shadow-2xl p-4 md:p-8 backdrop-blur-2xl border border-gray-800 text-center">
                     <h1 className="font-orbitron text-4xl md:text-6xl font-bold text-glacier-white mb-4">Pre-Order Sankalpa v1</h1>
                     <p className="text-lg text-gray-300 mb-6">Secure your spot to own the future of flight. Pre-order the Sankalpa v1 eVTOL and join the revolution in urban air mobility.</p>
                     <div className="bg-white/10 rounded-xl p-6 mb-8 border border-gray-700 text-left">

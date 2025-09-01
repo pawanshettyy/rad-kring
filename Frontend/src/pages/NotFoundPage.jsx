@@ -14,7 +14,7 @@ export default function NotFoundPage() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
-                className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4"
+                className="flex flex-col items-center justify-center min-h-[70vh] text-center px-2 md:px-4 w-full"
             >
                 <h1 className="font-orbitron text-8xl md:text-9xl font-extrabold text-electric-orange">404</h1>
                 <h2 className="mt-4 font-michroma text-2xl md:text-4xl font-bold text-glacier-white">Page Not Found</h2>

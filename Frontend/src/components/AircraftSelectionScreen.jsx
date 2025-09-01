@@ -38,7 +38,8 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
     onBookingUpdate({
         time: selectedTime,
         services: additionalServices
-    })
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     onNavigate('payment');
   };
 
@@ -54,7 +55,13 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
           <Button
             variant="ghost"
             size="icon"
-            onClick={goBack}
+            onClick={() => {
+              if (typeof goBack === 'function') {
+                goBack();
+              } else if (typeof onNavigate === 'function') {
+                onNavigate('pricing'); // fallback to pricing or previous
+              }
+            }}
             className="text-white hover:bg-white/10"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -159,10 +166,10 @@ export default function AircraftSelectionScreen({ onNavigate, bookingData, goBac
               key={service.id}
               whileTap={{ scale: 0.98 }}
               onClick={() => toggleService(service.id)}
-              className={`glass-panel rounded-xl p-4 cursor-pointer transition-all ${
+              className={`rounded-xl p-4 cursor-pointer transition-all border ${
                 additionalServices.includes(service.id)
                   ? 'bg-orange-500/20 border-orange-500/50'
-                  : 'hover:bg-white/10'
+                  : 'border-gray-700 hover:bg-white/10'
               }`}
             >
               <div className="flex items-center justify-between">
